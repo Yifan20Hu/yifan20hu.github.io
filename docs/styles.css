@@ -131,3 +131,5 @@
 #research.section{padding-top:75px;padding-bottom:36px}
 #news.section{padding-top:40px}
 @media(max-width:620px){#research.section{padding-top:58px;padding-bottom:28px}#news.section{padding-top:28px}}
+
+.simple-list .alumni-placement{display:block;margin-top:4px;color:var(--ink);font-size:13px}
