@@ -14,7 +14,8 @@ In the repository **Settings → Pages**, choose **Deploy from a branch**, selec
 
 ## Updating content
 
-- Homepage, research, news, recruiting, and teaching: `docs/index.html`
+- Homepage, research, news, and recruiting: `docs/index.html`
+- Teaching and courses: `docs/teaching.html`
 - Full publication list: `docs/publications.html`
 - People: `docs/people.html`
 - Slides: `docs/talks.html`
