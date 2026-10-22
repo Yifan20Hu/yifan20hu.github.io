@@ -87,10 +87,6 @@
 @media(max-width:620px){.person-head{gap:14px}.person-photo{width:78px;height:94px}.research-area summary{grid-template-columns:37px minmax(0,1fr);gap:12px;padding:21px 0}.area-heading strong{font-size:25px}.area-count{grid-column:2;text-align:left}.area-publications{margin-left:0}.contact-panel{padding:30px 24px}.contact-panel .contact-address{font-size:21px}}
 
 /* About and editorial research directions */
-.home-about{border-bottom:1px solid var(--line)}
-.home-about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:9%;align-items:start}
-.home-about-layout>p{font:normal clamp(23px,2.4vw,32px)/1.45 var(--serif);letter-spacing:-.02em;margin:0}
-.home-about-layout>div p{font-size:15px;color:var(--muted);margin:4px 0 21px}
 .about-layout{display:grid;grid-template-columns:minmax(240px,.65fr) minmax(0,1.35fr);gap:7%;align-items:start}
 .about-portrait{border:7px solid white;box-shadow:0 0 0 1px var(--line);background:#e5e4e2;max-width:420px;width:100%}
 .about-portrait img{display:block;width:100%;height:auto}
@@ -128,5 +124,10 @@
 .research-block-details .area-publications li:last-child{border-bottom:0}
 .research-block-details .research-pub-title{font-size:18px}
 .research-block-details .research-pub-note{font-size:11px;color:#5c6570;margin-top:6px}
-@media(max-width:880px){.research-block-grid{grid-template-columns:1fr}.about-layout{grid-template-columns:1fr;gap:35px}.about-portrait{max-width:310px}.home-about-layout{grid-template-columns:1fr;gap:18px}}
+@media(max-width:880px){.research-block-grid{grid-template-columns:1fr}.about-layout{grid-template-columns:1fr;gap:35px}.about-portrait{max-width:310px}}
 @media(max-width:620px){.research-block{padding:26px 22px 0}.research-themes{grid-template-columns:1fr;gap:16px}.research-block-details{margin-inline:-22px}.research-block-details summary{padding-inline:22px}.research-block-details .area-publications{padding-inline:22px}}
+
+/* Homepage rhythm */
+#research.section{padding-top:75px;padding-bottom:36px}
+#news.section{padding-top:40px}
+@media(max-width:620px){#research.section{padding-top:58px;padding-bottom:28px}#news.section{padding-top:28px}}
