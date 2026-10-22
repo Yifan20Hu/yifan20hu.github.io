@@ -22,3 +22,13 @@ if (toggle && nav) {
     }
   });
 }
+
+// Direct links from the homepage open the corresponding research area.
+function openResearchAreaFromHash() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  const area = id && document.getElementById(id);
+  if (area?.matches('details.research-area')) area.open = true;
+}
+
+window.addEventListener('hashchange', openResearchAreaFromHash);
+openResearchAreaFromHash();

@@ -14,12 +14,14 @@ In the repository **Settings → Pages**, choose **Deploy from a branch**, selec
 
 ## Updating content
 
-- Homepage, research, news, and recruiting: `docs/index.html`
-- Teaching and courses: `docs/teaching.html`
+- Homepage and news: `docs/index.html`
+- Research areas with expandable publication lists: `docs/research.html`
+- Teaching: `docs/teaching.html`; individual course pages: `docs/course-*.html`
 - Full publication list: `docs/publications.html`
-- People: `docs/people.html`
+- People, portraits, and shared papers: `docs/people.html`, `docs/assets/people/`
+- Opportunities and contact: `docs/working-with-us.html`
 - Slides: `docs/talks.html`
-- Awards and service: `docs/service.html`
+- Awards & Services: `docs/service.html`
 - Shared styles and mobile menu: `docs/styles.css`, `docs/script.js`
 
 The older Academic Pages starter files remain in the repository for now; the `/docs` publishing source keeps them separate from the new site.
