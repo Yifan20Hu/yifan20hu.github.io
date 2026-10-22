@@ -5,6 +5,10 @@ const pages = fs.readdirSync(root).filter(f => f.endsWith('.html'));
 let errors = [];
 for (const page of pages) {
   const html = fs.readFileSync(path.join(root, page), 'utf8');
+  if (page === 'service.html') {
+    if (!html.includes('about.html#awards-services')) errors.push('Old service URL must point to About');
+    continue;
+  }
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const raw = match[1].replaceAll('&amp;', '&');
     if (/^(?:https?:|mailto:|data:)/.test(raw)) continue;
@@ -19,7 +23,8 @@ for (const page of pages) {
   }
   if (html.includes('mailto:') || html.includes('yifan.hu@rutgers.edu')) errors.push(`${page}: raw contact address`);
   if (html.includes('sites.google.com/view/yifan-hu/teaching')) errors.push(`${page}: old Google course link`);
-  if (!html.includes('Awards &amp; Services') || !html.includes('Working With Us')) errors.push(`${page}: navigation incomplete`);
+  if (!html.includes('>About</a>') || !html.includes('Working With Us')) errors.push(`${page}: navigation incomplete`);
+  if (html.includes('>Home</a>')) errors.push(`${page}: redundant Home navigation`);
 }
 const people = fs.readFileSync(path.join(root, 'people.html'), 'utf8');
 if ((people.match(/class="person-photo"/g) || []).length !== 9) errors.push('Expected 9 current and collaborative portraits');

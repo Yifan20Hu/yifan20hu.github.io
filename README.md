@@ -21,7 +21,7 @@ In the repository **Settings → Pages**, choose **Deploy from a branch**, selec
 - People, portraits, and shared papers: `docs/people.html`, `docs/assets/people/`
 - Opportunities and contact: `docs/working-with-us.html`
 - Slides: `docs/talks.html`
-- Awards & Services: `docs/service.html`
+- Biography, awards, and service: `docs/about.html` (`docs/service.html` redirects there)
 - Shared styles and mobile menu: `docs/styles.css`, `docs/script.js`
 
 The older Academic Pages starter files remain in the repository for now; the `/docs` publishing source keeps them separate from the new site.

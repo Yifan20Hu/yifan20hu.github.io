@@ -27,7 +27,10 @@ if (toggle && nav) {
 function openResearchAreaFromHash() {
   const id = decodeURIComponent(window.location.hash.slice(1));
   const area = id && document.getElementById(id);
-  if (area?.matches('details.research-area')) area.open = true;
+  if (area?.matches('.research-block')) {
+    const publications = area.querySelector('details.research-block-details');
+    if (publications) publications.open = true;
+  }
 }
 
 window.addEventListener('hashchange', openResearchAreaFromHash);
