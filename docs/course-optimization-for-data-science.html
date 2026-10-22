@@ -1,5 +1,39 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f6"><meta name="description" content="Special Topics: Optimization for Data Science, Spring 2026, Rutgers University."><title>Special Topics: Optimization for Data Science | Yifan Hu</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=20261023h"><script src="script.js" defer></script></head><body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf9f6"><meta name="description" content="Optimization for Data Science, Spring 2026, Rutgers University."><title>Optimization for Data Science | Yifan Hu</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=20261023h"><script src="script.js" defer></script></head><body>
 <a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="Yifan Hu, home"><span class="brand-mark">YH</span><span>Yifan Hu <span class="brand-chinese" lang="zh">逸凡</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="people.html">People</a><a class="active" aria-current="page" href="teaching.html">Teaching</a><a href="talks.html">Talks</a><a href="about.html">About</a><a class="nav-contact" href="working-with-us.html">Working With Us</a></nav></div></header>
-<main id="main"><div class="page-hero shell"><p class="eyebrow">TEACHING / SPRING 2026</p><h1>Special Topics: Optimization for Data Science<span class="period">.</span></h1><p>16:960:690 · Rutgers University · Spring 2026</p></div><div class="shell page-content"><div class="course-detail prose"><p class="course-intro">A graduate course on optimization methods and theory for contemporary data science.</p><h2>Course Overview</h2><p>This special topics course studies optimization methods and theory used in data science. For archived materials or questions about the Spring 2026 offering, see the <a href="working-with-us.html#contact">contact information</a>.</p><p class="course-back"><a class="section-link" href="teaching.html">← All Courses</a></p></div></div></main>
+<main id="main">
+  <div class="page-hero shell"><p class="eyebrow">TEACHING / SPRING 2026</p><h1>Optimization for Data Science<span class="period">.</span></h1><p>16:960:690:01 / 16:954:694:02 · Rutgers University · Spring 2026</p></div>
+  <div class="shell page-content"><div class="course-detail prose">
+    <p class="course-intro">An in-depth graduate course on classical and modern optimization methods for statistics, machine learning, and data science.</p>
+    <h2>Course Overview</h2>
+    <p>The course begins with optimization models for learning from data and the theory of convex optimization. It then studies stochastic gradient methods, modern nonconvex optimization, and optimizers used in deep learning and reinforcement learning. Applications include statistical modeling, causal learning, robust optimization, and generative systems.</p>
+    <p>Emphasis is placed on modeling intuition, algorithm design, mathematical analysis, performance guarantees, and the limits of each method. Students learn to choose and assess optimization approaches for different applications.</p>
+    <h2>Course Information</h2>
+    <ul><li>Cross-listed as 16:960:690:01 and 16:954:694:02.</li><li>Thursdays, 12:10–3:10 p.m., PH-111.</li><li>Prerequisites: solid analysis and linear algebra, familiarity with algorithms and computational complexity, and comfort with mathematical proofs.</li></ul>
+    <h2>Assessment and Project</h2>
+    <p>One quiz contributes 20% of the grade and the course project contributes 80%. Five optional take-home questions can each add up to 5% bonus credit.</p>
+    <p>Students may work alone or in a group of two or three. Projects may develop an optimization algorithm, analyze one theoretically, or implement methods for an application. Students may select an instructor-provided topic or propose their own after discussion with the course team.</p>
+    <h2>Tentative Weekly Outline</h2>
+    <div class="course-table-wrap"><table class="course-table"><thead><tr><th>Week / Date</th><th>Topic</th></tr></thead><tbody>
+      <tr><td>1 · Jan 22</td><td>Optimization models, examples, and constrained versus unconstrained problems</td></tr>
+      <tr><td>2 · Jan 29</td><td>Convexity: sets, functions, strong convexity, smoothness, and geometry</td></tr>
+      <tr><td>3 · Feb 5</td><td>Stochastic optimization, empirical risk minimization, stability, and generalization</td></tr>
+      <tr><td>4 · Feb 12</td><td>Stochastic gradient descent: convergence, sample complexity, stability, and implementation</td></tr>
+      <tr><td>5 · Feb 19</td><td>Coordinate descent and Frank–Wolfe methods</td></tr>
+      <tr><td>6 · Feb 26</td><td>Mirror descent, Bregman divergence, nonsmoothness, and hidden convexity</td></tr>
+      <tr><td>7 · Mar 5</td><td>Deep-learning optimizers and variance-reduced gradients: Adam-mini, SARAH, SPIDER, STORM, and PAGE</td></tr>
+      <tr><td>8 · Mar 12</td><td>Matrix optimizers, including Muon variants</td></tr>
+      <tr><td>9 · Mar 19</td><td>Spring break</td></tr>
+      <tr><td>10 · Mar 26</td><td>Nonconvex optimization landscapes and convergence to stationary points</td></tr>
+      <tr><td>11 · Apr 2</td><td>Stochastic minimax, bilevel, and contextual optimization; biased gradients</td></tr>
+      <tr><td>12 · Apr 9</td><td>Distributionally robust optimization, dual formulations, computation, and generalization</td></tr>
+      <tr><td>13 · Apr 16</td><td>Causal learning as optimization: invariance, instrumental variables, and DAG learning</td></tr>
+      <tr><td>14 · Apr 23</td><td>Policy optimization in reinforcement learning and function approximation</td></tr>
+      <tr><td>15 · Apr 30</td><td>Variational inference, reinforcement learning from human feedback, and fine-tuning</td></tr>
+    </tbody></table></div>
+    <h2>Reading Material</h2>
+    <ul><li><a href="https://github.com/epfml/OptML_course/tree/main/lecture_notes">Optimization course lecture notes</a>, by Zebang Shen, Niao He, Bernd Gärtner, and Martin Jaggi.</li><li><a href="https://stanford.edu/~boyd/cvxbook/">Convex Optimization</a>, by Stephen Boyd and Lieven Vandenberghe.</li><li><a href="https://arxiv.org/abs/1405.4980">Convex Optimization: Algorithms and Complexity</a>, by Sébastien Bubeck.</li><li><a href="https://doi.org/10.1017/9781108627771">High-Dimensional Statistics</a>, by Martin J. Wainwright.</li><li><a href="https://arxiv.org/abs/1606.04838">Optimization Methods for Large-Scale Machine Learning</a>, by Léon Bottou, Frank E. Curtis, and Jorge Nocedal.</li></ul>
+    <p class="course-back"><a class="section-link" href="teaching.html">← All Courses</a></p>
+  </div></div>
+</main>
 <footer class="site-footer"><div class="shell footer-grid"><div><a class="footer-name" href="index.html">Yifan Hu <span lang="zh">逸凡</span></a><p>Decision making under uncertainty.<br>Rutgers University · New Brunswick, NJ</p></div><div><span class="footer-label">EXPLORE</span><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="people.html">People</a><a href="teaching.html">Teaching</a><a href="talks.html">Talks &amp; Slides</a><a href="about.html">About</a><a href="working-with-us.html">Working With Us</a></div><div><span class="footer-label">CONTACT</span><span class="footer-email">firstname.lastname@rutgers.edu</span><a href="https://scholar.google.com/citations?hl=en&amp;user=rO2s0EEAAAAJ">Google Scholar ↗</a><a href="https://www.linkedin.com/in/yifanhu9/">LinkedIn ↗</a></div></div><div class="shell footer-bottom"><span>© 2026 Yifan Hu</span><span>Last updated October 2026</span></div></footer></body></html>
