@@ -133,3 +133,13 @@
 @media(max-width:620px){#research.section{padding-top:58px;padding-bottom:28px}#news.section{padding-top:28px}}
 
 .simple-list .alumni-placement{display:block;margin-top:4px;color:var(--ink);font-size:13px}
+
+.research-subtopics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 0 27px}
+.research-subtopic{min-width:0;padding:23px;border:1px solid var(--line);background:#faf9f6}
+.research-subtopic h3{font:normal 23px/1.2 var(--serif);margin:0 0 9px}
+.research-subtopic p{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 15px}
+.research-subtopic ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.research-subtopic li{font-size:12px;line-height:1.45;padding:9px 0;border-bottom:1px solid var(--line)}
+.research-subtopic a{color:var(--red);text-decoration:none}
+.research-subtopic a:hover{text-decoration:underline}
+@media(max-width:620px){.research-subtopics{grid-template-columns:1fr}}

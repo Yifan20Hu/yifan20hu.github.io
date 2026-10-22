@@ -29,7 +29,7 @@ for (const page of pages) {
 const people = fs.readFileSync(path.join(root, 'people.html'), 'utf8');
 if ((people.match(/class="person-photo"/g) || []).length !== 9) errors.push('Expected 9 current and collaborative portraits');
 const research = fs.readFileSync(path.join(root, 'research.html'), 'utf8');
-if ((research.match(/class="research-pub-title"/g) || []).length !== 25) errors.push('Research areas should cover all 25 listed works');
+if ((research.match(/class="research-pub-title"/g) || []).length !== 26) errors.push('Expected 26 entries across the research areas');
 if (research.includes('Missing publication')) errors.push('Unmatched publication key');
-console.log(`Checked ${pages.length} pages, 9 portraits, and 25 grouped works.`);
+console.log(`Checked ${pages.length} pages, 9 portraits, and 26 research-area entries.`);
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
