@@ -92,11 +92,11 @@
 .home-about-layout>p{font:normal clamp(23px,2.4vw,32px)/1.45 var(--serif);letter-spacing:-.02em;margin:0}
 .home-about-layout>div p{font-size:15px;color:var(--muted);margin:4px 0 21px}
 .about-layout{display:grid;grid-template-columns:minmax(240px,.65fr) minmax(0,1.35fr);gap:7%;align-items:start}
-.about-portrait{border:7px solid white;box-shadow:0 0 0 1px var(--line);background:#e5e4e2;max-width:370px}
-.about-portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:58% 48%}
+.about-portrait{border:7px solid white;box-shadow:0 0 0 1px var(--line);background:#e5e4e2;max-width:420px;width:100%}
+.about-portrait img{display:block;width:100%;height:auto}
 .about-copy h2{margin-top:0}
 .about-service{margin-top:75px;padding-top:16px;border-top:1px solid var(--line);max-width:none}
-.about-service>.content-heading{margin-top:20px}
+
 .about-service>h2,.about-service>p,.about-service>ul{max-width:850px}
 .person .person-status{color:var(--ink);font-size:12px;font-weight:600;margin-top:7px}
 .person .person-note a{color:inherit;text-decoration:underline}
