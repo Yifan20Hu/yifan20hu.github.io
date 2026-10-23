@@ -143,3 +143,8 @@
 .research-subtopic a{color:var(--red);text-decoration:none}
 .research-subtopic a:hover{text-decoration:underline}
 @media(max-width:620px){.research-subtopics{grid-template-columns:1fr}}
+
+.profile-strip .strip-list{list-style:none;padding:0;margin:0}
+.profile-strip .strip-list li{display:flex;gap:8px;font-size:13px;font-weight:600;line-height:1.45}
+.profile-strip .strip-list li+li{margin-top:3px}
+.profile-strip .strip-list li::before{content:"·";color:var(--red);font-weight:700}
