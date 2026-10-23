@@ -20,7 +20,7 @@
 .shared-work li{font-size:12px;line-height:1.55;padding:6px 0;border:0}
 .shared-work li a{text-decoration:none;border-bottom:1px solid #c4a9ae}
 .shared-work li a:hover{color:var(--red)}
-.shared-work li span{color:var(--muted);white-space:nowrap;font-size:11px}
+.shared-work li span{display:block;margin-top:3px;color:var(--muted);font-size:11px}
 @media(max-width:620px){.teaching-grid{grid-template-columns:1fr}.teaching-card{min-height:0;padding:25px}.teaching-card h3{font-size:27px}}
 .current-students .person:nth-child(1){grid-column:1;grid-row:1}
 .current-students .person:nth-child(2){grid-column:1;grid-row:2}
