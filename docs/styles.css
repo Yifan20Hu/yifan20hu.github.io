@@ -148,3 +148,7 @@
 .profile-strip .strip-list li{display:flex;gap:8px;font-size:13px;font-weight:600;line-height:1.45}
 .profile-strip .strip-list li+li{margin-top:3px}
 .profile-strip .strip-list li::before{content:"·";color:var(--red);font-weight:700}
+
+/* One opportunity link, displayed on two rows. */
+.profile-strip .strip-opportunities{display:inline-flex;flex-direction:column;gap:3px}
+.profile-strip .strip-opportunities>span{display:block}
